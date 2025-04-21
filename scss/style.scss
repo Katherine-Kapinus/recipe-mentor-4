@@ -25,7 +25,7 @@ body{
 section{
 	@media (max-width: 769px) {
 		&:not(:first-child){
-			margin: 20px;
+			margin: 0 20px;
 		}
 	}
 }
@@ -48,6 +48,9 @@ section{
 			@media (max-width: 769px) {
 				gap: 36px;
 			}
+			@media (max-width: 600px) {
+				gap: 18px;
+			}
 		}
 
 		&__image {
@@ -64,18 +67,6 @@ section{
 			}
 		}
 
-		&__main {
-
-		}
-
-		&__ingredients {
-		}
-
-		&__instructions {
-		}
-
-		&__nutrition {
-		}
 }
 .main {
 	display: flex;
@@ -86,11 +77,18 @@ section{
 		gap: 18px;
 		margin-bottom: -12px;
 	}
+	@media (max-width: 600px) {
+		gap: 12px;
+		margin-bottom: 0px;
+	}
 
 		&__title {
 			font-family: 'Young Serif', serif;
 			font-weight: 400;
 			font-size: 42px;
+			@media (max-width: 600px) {
+				font-size: 32px;
+			}
 		}
 
 		&__description {
@@ -104,7 +102,9 @@ section{
 	background-color: hsl(330, 100%, 98%);
 	padding: 30px;
 	border-radius: 20px;
-
+	@media (max-width: 600px) {
+		padding: 20px;
+	}
 
 		&__title {
 			font-size: 24px;
@@ -112,6 +112,9 @@ section{
 			line-height: 1.2;
 			margin-bottom: 20px;
 			color: hsl(332, 51%, 32%);
+			@media (max-width: 600px) {
+				font-size: 20px;
+			}
 		}
 
 		&__points {

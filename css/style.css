@@ -115,7 +115,7 @@ body {
 
 @media (max-width: 769px) {
   section:not(:first-child) {
-    margin: 20px;
+    margin: 0 20px;
   }
 }
 
@@ -142,6 +142,11 @@ body {
     gap: 36px;
   }
 }
+@media (max-width: 600px) {
+  .card__container {
+    gap: 18px;
+  }
+}
 .card__image {
   width: 100%;
   aspect-ratio: 2/1;
@@ -157,6 +162,7 @@ body {
     border-radius: 0px;
   }
 }
+
 .main {
   display: flex;
   gap: 25px;
@@ -169,10 +175,21 @@ body {
     margin-bottom: -12px;
   }
 }
+@media (max-width: 600px) {
+  .main {
+    gap: 12px;
+    margin-bottom: 0px;
+  }
+}
 .main__title {
   font-family: "Young Serif", serif;
   font-weight: 400;
   font-size: 42px;
+}
+@media (max-width: 600px) {
+  .main__title {
+    font-size: 32px;
+  }
 }
 .main__description {
   line-height: 1.5;
@@ -182,12 +199,22 @@ body {
   padding: 30px;
   border-radius: 20px;
 }
+@media (max-width: 600px) {
+  .preparation {
+    padding: 20px;
+  }
+}
 .preparation__title {
   font-size: 24px;
   font-weight: 600;
   line-height: 1.2;
   margin-bottom: 20px;
   color: hsl(332, 51%, 32%);
+}
+@media (max-width: 600px) {
+  .preparation__title {
+    font-size: 20px;
+  }
 }
 .preparation__points {
   padding-left: 24px;
