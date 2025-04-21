@@ -1,16 +1,182 @@
 @import 'nullstyle';
+@import 'components';
 
 
+html{
+	height: auto;
+
+}
 body{
-      font-family: 'Inter', sans-serif;
-      color: #fff;
+	font-family: 'Outfit', sans-serif;
+	color: hsl(24, 5%, 18%);
+	min-height: 100vh;
 }
 .wrapper {
-      background-color: hsl(0, 0%, 8%);
-      width: 100%;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+	background-color: hsl(30, 54%, 90%);
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding: 50px;
 }
 
+.card {
+	background-color: hsl(0, 0%, 100%);
+	padding: 40px;
+	border-radius: 20px;
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+	max-width: 720px;
+
+		&__container {
+			display: flex;
+			flex-direction: column;
+			gap: 50px;
+		}
+
+		&__image {
+			// max-width: 640px;
+			width: 100%;
+			aspect-ratio: 2 / 1;
+			background-image: url('../img/image-omelette.jpeg');
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+			border-radius: 20px;
+			overflow: hidden;
+		}
+
+		&__main {
+
+		}
+
+		&__ingredients {
+		}
+
+		&__instructions {
+		}
+
+		&__nutrition {
+		}
+}
+.main {
+	display: flex;
+	gap: 25px;
+	flex-direction: column;
+	margin-bottom: -20px;
+
+		&__title {
+			font-family: 'Young Serif', serif;
+			font-weight: 400;
+			font-size: 42px;
+		}
+
+		&__description {
+			line-height: 1.5;
+		}
+
+		&__preparation {
+		}
+}
+.preparation {
+	background-color: hsl(330, 100%, 98%);
+	padding: 30px;
+	border-radius: 20px;
+
+
+		&__title {
+			font-size: 24px;
+			font-weight: 600;
+			line-height: 1.2;
+			margin-bottom: 20px;
+			color: hsl(332, 51%, 32%);
+		}
+
+		&__points {
+			padding-left: 24px;
+		}
+
+		&__point {
+			& span{
+				font-weight: 600;
+			}
+		}
+
+		&__bold {
+		}
+}
+.ingredients {
+	padding-bottom: 25px;
+	margin-bottom: -25px;
+	border-bottom: 1px solid hsl(30, 18%, 87%);
+
+	&__title{
+
+	}
+
+		&__list {
+			padding-left: 18px;
+		}
+
+		&__item {
+		}
+}
+.instructions {
+	padding-bottom: 25px;
+	margin-bottom: -25px;
+	border-bottom: 1px solid hsl(30, 18%, 87%);
+
+		&__title {
+		}
+
+		&__list {
+			padding-left: 20px;
+
+		}
+
+		&__item {
+			line-height: 24px;
+			&::marker{
+				font-weight: 700;
+			}
+			& span{
+				font-weight: 600;
+			}
+		}
+}
+.nutrition {
+
+		&__title {
+		}
+
+		&__description {
+			margin-bottom: 8px;
+		}
+
+		&__list{
+			display: flex;
+			flex-direction: column;
+		}
+
+		&__row{
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			align-items: center;
+			padding: 20px 0;
+			border-bottom: 1px solid hsl(30, 18%, 87%);
+			
+			&:last-child {
+				border-bottom: none;
+				padding: 20px 0 0 0 ;
+			}
+		}
+
+		& dt{
+			padding-left: 32px;
+
+
+		}
+		& dd{
+			font-weight: 600;
+			padding-left: 32px;
+			color: hsl(14, 45%, 36%);
+		}
+}

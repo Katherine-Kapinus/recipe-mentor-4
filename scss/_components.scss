@@ -1,0 +1,21 @@
+.title-brown{
+    font-family: 'Young Serif', serif;
+    font-size: 24px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: hsl(14, 45%, 36%);
+}
+
+.ul-list{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.item-of-ul{
+    position: relative;
+    padding-left: 16px; // відстань між маркером і текстом
+    &::marker{
+        color: hsl(332, 51%, 32%);
+    }
+}
